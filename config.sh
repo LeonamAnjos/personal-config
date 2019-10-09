@@ -15,7 +15,7 @@ apt install -y curl
 apt install -y git
 
 # c compiler
-apt install -y libssl-dev libreadline-dev zlib1g-dev gcc make
+apt install -y libssl-dev libreadline-dev zlib1g-dev libpq-dev gcc make
 
 # VSCode
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
