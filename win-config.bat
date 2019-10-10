@@ -4,3 +4,5 @@ choco install -y googlechrome
 choco install -y git.install
 choco install -y vscode
 choco install -y ditto
+choco install -y lightshot
+choco install -y openvpn
