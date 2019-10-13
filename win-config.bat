@@ -7,3 +7,4 @@ choco install -y ditto
 choco install -y lightshot
 choco install -y openvpn
 choco install -y dbeaver
+choco install -y peazip
