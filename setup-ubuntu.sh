@@ -36,3 +36,9 @@ apt install -y postgresql postgresql-contrib
 # nodejs
 apt install -y npm
 npm install n
+
+
+# miscellaneous
+apt install -y copyq
+apt install -y flameshot
+
