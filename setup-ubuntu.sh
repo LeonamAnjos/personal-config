@@ -23,12 +23,18 @@ add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode
 apt update
 apt install -y code
 
+# rvm
+apt install -y software-properties-common
+apt-add-repository -y ppa:rael-gc/rvm
+apt-get update
+apt install -y rvm
+
 # rbenv
-git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
-source ~/.bashrc
+# git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+# echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+# echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+# git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+# source ~/.bashrc
 
 # ruby
 rbenv install 2.6.3 && rbenv global 2.6.3
