@@ -34,9 +34,10 @@ apt install -y rvm
 apt install -y postgresql postgresql-contrib
 
 # nodejs
+apt install -y libpng-dev 
 apt install -y npm
-npm install n
-
+npm install -g n
+sudo n 9.5.0
 
 # miscellaneous
 apt install -y copyq
