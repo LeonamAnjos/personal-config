@@ -8,3 +8,4 @@ choco install -y lightshot
 choco install -y openvpn
 choco install -y dbeaver
 choco install -y peazip
+choco install -y vlc
