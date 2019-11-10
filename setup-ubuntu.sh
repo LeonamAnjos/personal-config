@@ -42,4 +42,4 @@ sudo n 9.5.0
 # miscellaneous
 apt install -y copyq
 apt install -y flameshot
-
+apt install -y vlc
