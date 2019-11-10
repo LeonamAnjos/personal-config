@@ -43,3 +43,4 @@ sudo n 9.5.0
 apt install -y copyq
 apt install -y flameshot
 apt install -y vlc
+apt install -y gnome-tweak-tool
