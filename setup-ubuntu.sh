@@ -17,6 +17,9 @@ apt install -y git
 # c compiler
 apt install -y libssl-dev libreadline-dev zlib1g-dev libpq-dev libsqlite3-dev gcc make
 
+# cypress dependecies
+apt install -y xvfb libgtk-3-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libgtk2.0-0:i386
+
 # VSCode
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
 add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
