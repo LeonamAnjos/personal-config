@@ -40,7 +40,8 @@ apt install -y postgresql postgresql-contrib
 apt install -y libpng-dev 
 apt install -y npm
 npm install -g n
-sudo n 9.5.0
+sudo n 9.10.1
+npm install -g typescript
 
 # miscellaneous
 apt install -y copyq
