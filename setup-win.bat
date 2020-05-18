@@ -13,6 +13,7 @@ choco install -y vlc
 # choco install -y dbeaver
 
 # DH
+# choco install -y slack
 # choco install -y awscli
 # choco install -y postman
 # choco install -y terraform
