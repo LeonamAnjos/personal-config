@@ -5,7 +5,14 @@ choco install -y git.install
 choco install -y vscode
 choco install -y ditto
 choco install -y lightshot
-choco install -y openvpn
-choco install -y dbeaver
 choco install -y peazip
 choco install -y vlc
+
+# Fornax
+# choco install -y openvpn
+# choco install -y dbeaver
+
+# DH
+# choco install -y awscli
+# choco install -y postman
+# choco install -y terraform
