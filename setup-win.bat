@@ -7,8 +7,10 @@ choco install -y ditto
 choco install -y lightshot
 choco install -y peazip
 choco install -y vlc
-choco install -y wsl-ubuntu-2004
 choco install -y microsoft-windows-terminal
+
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+choco install -y wsl-ubuntu-2004
 
 # Fornax
 # choco install -y openvpn
