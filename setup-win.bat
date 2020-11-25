@@ -7,6 +7,8 @@ choco install -y ditto
 choco install -y lightshot
 choco install -y peazip
 choco install -y vlc
+choco install -y wsl-ubuntu-2004
+choco install -y microsoft-windows-terminal
 
 # Fornax
 # choco install -y openvpn
