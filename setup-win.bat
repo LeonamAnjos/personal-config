@@ -8,6 +8,7 @@ choco install -y lightshot
 choco install -y peazip
 choco install -y vlc
 choco install -y microsoft-windows-terminal
+choco install -y camstudio
 
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 choco install -y wsl-ubuntu-2004
