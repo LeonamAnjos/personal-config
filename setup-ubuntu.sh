@@ -48,3 +48,7 @@ apt install -y copyq
 apt install -y flameshot
 apt install -y vlc
 apt install -y gnome-tweak-tool
+apt install -y htop
+
+add-apt-repository ppa:dawidd0811/neofetch
+apt update && apt install -y neofetch
