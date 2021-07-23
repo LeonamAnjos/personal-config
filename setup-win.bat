@@ -22,3 +22,4 @@ choco install -y wsl-ubuntu-2004
 # choco install -y awscli
 # choco install -y postman
 # choco install -y terraform
+# choco install -y fxcop
