@@ -35,13 +35,19 @@ apt-get update
 apt install -y rvm
 
 # postgresql
-apt install -y postgresql postgresql-contrib
+# apt install -y postgresql postgresql-contrib
 
 # nodejs
-apt install -y libpng-dev 
-apt install -y npm
-npm install -g n
-sudo n 9.10.1
+# nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+source ~/.bashrc
+nvm install --lts
+
+# apt install -y libpng-dev 
+# apt install -y npm
+# npm install -g n
+# sudo n 9.10.1
+npm install -g yarn
 npm install -g typescript
 
 # miscellaneous
