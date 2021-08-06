@@ -12,7 +12,8 @@ rm ./google-chrome-stable_current_amd64.deb
 apt install -y curl
 
 # git
-apt install -y git
+add-apt-repository ppa:git-core/ppa
+apt update; apt install -y git
 
 # c compiler
 apt install -y libssl-dev libreadline-dev zlib1g-dev libpq-dev libsqlite3-dev gcc make
