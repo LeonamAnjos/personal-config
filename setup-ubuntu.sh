@@ -41,14 +41,14 @@ apt install -y rvm
 # nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 source ~/.bashrc
-nvm install --lts
+nvm install node
 
 # apt install -y libpng-dev 
 # apt install -y npm
 # npm install -g n
 # sudo n 9.10.1
-npm install -g yarn
-npm install -g typescript
+npm install --global yarn
+npm install --global typescript
 
 # miscellaneous
 apt install -y copyq
