@@ -29,10 +29,23 @@ apt install -y code
 
 # rvm
 # better restart computer before using rvm
-apt install -y software-properties-common
-apt-add-repository -y ppa:rael-gc/rvm
-apt-get update
-apt install -y rvm
+# apt install -y software-properties-common
+# apt-add-repository -y ppa:rael-gc/rvm
+# apt-get update
+# apt install -y rvm
+
+# rbenv
+# https://github.com/rbenv/rbenv#installation
+apt install -y rbenv
+rbenv init
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+
+# https://github.com/rbenv/ruby-build#installation
+mkdir -p "$(rbenv root)"/plugins
+git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+
+# verify
+curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-doctor | bash
 
 # postgresql
 # apt install -y postgresql postgresql-contrib
