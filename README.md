@@ -8,7 +8,7 @@
 ### Apply / Update basic configurations
 
 ```sh
-$ cd linux/ && ./config-setup.sh && cd .. && source ~/.bashrc
+cd linux/ && ./config-setup.sh && cd .. && source ~/.bashrc
 ```
 
 ## Windows OS
