@@ -3,6 +3,7 @@
 # Git Aliases
 alias g='git'
 
+alias gs='git status --short --branch'
 alias grso='git remote show origin'
 alias gtm='f(){ git tag -a $1$2 -m $1$2; echo "Tag: $1$2"; unset -f f; }; f "release/$(date +%Y-%m-%d)"'
 
