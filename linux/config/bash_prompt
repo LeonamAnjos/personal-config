@@ -1,0 +1,85 @@
+#! /bin/bash
+
+# helper functions for Bash - easier coloring than using escape sequences
+function Color() {
+  echo "\[$(tput setaf $1)\]"
+}
+function ResetColor() {
+  echo "\[$(tput sgr0)\]"
+}
+
+color_reset=$(ResetColor)
+
+color_red_1=$(Color 1)
+color_red_2=$(Color 9)
+
+color_green_1=$(Color 2)
+color_green_2=$(Color 10)
+color_green_3=$(Color 22)
+color_green_4=$(Color 28)
+color_green_5=$(Color 34)
+color_green_6=$(Color 40)
+color_green_7=$(Color 46)
+
+color_yellow_1=$(Color 3)
+color_yellow_2=$(Color 11)
+color_yellow_3=$(Color 214)
+
+color_blue_1=$(Color 4)
+color_blue_2=$(Color 6)
+color_blue_3=$(Color 12)
+color_blue_4=$(Color 27)
+
+color_purple_1=$(Color 5)
+color_purple_2=$(Color 13)
+
+color_white_1=$(Color 7)
+color_white_2=$(Color 15)
+
+color_gray=$(Color 8)
+color_black=$(Color 16)
+
+
+function LastStatusPrompt() {
+  local last_status=$?
+  local failure="✘"
+  local success="✔"
+
+  if [[ "$last_status" != "0" ]]; then
+      last_status="$color_red_1$failure$color_reset"
+  else
+      last_status="$color_green_1$success$color_reset"
+  fi
+
+  echo $last_status
+}
+
+function SessionPrompt() {
+  echo "$color_yellow_3\u@\h$color_reset"
+}
+
+function FolderPrompt() {
+  echo "$color_blue_4\w$color_reset"
+}
+
+function GitBranch() {
+  # echo $(__git_ps1)
+  git branch --show-current 2> /dev/null
+}
+
+function GitPrompt() {
+  local git_branch=$(GitBranch)
+  [[ ! -z $git_branch ]] && echo "${color_green_7}[${git_branch}]${color_reset}"
+}
+
+function MyPrompt() {
+  local status=$(LastStatusPrompt)
+  local session=$(SessionPrompt)
+  local folder=$(FolderPrompt)
+  local git=$(GitPrompt)
+
+  local my_prompt="$status $session:$folder $git"
+  echo "$my_prompt$ "
+}
+
+PROMPT_COMMAND='PS1=$(MyPrompt)'
