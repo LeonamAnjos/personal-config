@@ -4,7 +4,7 @@ apt update
 apt upgrade
 
 # Chrome
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb 
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 apt install -y ./google-chrome-stable_current_amd64.deb
 rm ./google-chrome-stable_current_amd64.deb
 
@@ -56,7 +56,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 source ~/.bashrc
 nvm install node
 
-# apt install -y libpng-dev 
+# apt install -y libpng-dev
 # apt install -y npm
 # npm install -g n
 # sudo n 9.10.1
@@ -71,5 +71,5 @@ apt install -y gnome-tweak-tool
 apt install -y htop
 
 # add-apt-repository ppa:dawidd0811/neofetch
-# apt update 
+# apt update
 apt install -y neofetch
