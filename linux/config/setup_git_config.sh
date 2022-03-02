@@ -57,6 +57,12 @@ git config --global alias.tl  '!git tag --sort=-version:refname | head -n $1 #'
 git config --global alias.tlc '!git show-ref --tags -d | grep {} | tail -10 | sort -r'
 git config --global alias.tdr '!git tag -d $1; git push --delete origin $1 --no-verify #'
 
+git config --global alias.tr  '!T="release/$(date +"%Y-%m-%d")$2/prd01/$1"; git t $T #'
+git config --global alias.trh '!T="release/$(date +"%Y-%m-%d")$2/prd01/$1/HOTFIX"; git t $T #'
+
+git config --global alias.trp  '!git tr $1 $2; git pot #'
+git config --global alias.trhp '!git trh $1 $2; git pot #'
+
 git config --global alias.slc 'shortlog --numbered --summary --email --no-merges'
 git config --global alias.lg  'log --pretty=format:"%C(auto)%h%d %C(green)(%cs) %C(cyan)%an %C(auto)%s"'
 git config --global alias.lgg 'log --graph --decorate --all'
