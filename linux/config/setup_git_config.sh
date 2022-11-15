@@ -24,10 +24,6 @@ git config --global alias.co   'checkout'
 git config --global alias.com  'checkout master'
 git config --global alias.conb 'checkout -b'
 
-git config --global alias.ci   'commit -m'
-git config --global alias.cia  'commit --amend'
-git config --global alias.cian 'commit --amend --no-edit'
-
 git config --global alias.d  'diff'
 git config --global alias.dc 'diff --cached'
 
@@ -40,6 +36,7 @@ git config --global alias.up 'reset --patch HEAD --'
 git config --global alias.l  'pull'
 git config --global alias.lf 'pull --ff-only'
 git config --global alias.up 'pull --rebase'
+git config --global alias.lob '!git pull origin $(git branch --show-current)'
 
 git config --global alias.p   'push'
 git config --global alias.pot 'push origin --tags'
