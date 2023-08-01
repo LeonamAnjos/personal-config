@@ -50,7 +50,7 @@ wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add
 
 # nodejs
 # nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash
 && source ~/.bashrc \
 && nvm install node
 
