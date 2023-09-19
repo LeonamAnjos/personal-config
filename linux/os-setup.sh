@@ -42,15 +42,16 @@ apt install -y       \
     neofetch
 
 # VSCode
-wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -               \
-&& add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" \
-&& apt update     \
-&& apt install -y \
-    code
+# Go to https://code.visualstudio.com/docs/setup/linux instead of below:
+# wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -               \
+# && add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" \
+# && apt update     \
+# && apt install -y \
+#     code
 
 # nodejs
 # nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 && source ~/.bashrc \
 && nvm install node
 
