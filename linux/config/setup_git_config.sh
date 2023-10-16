@@ -45,7 +45,8 @@ git config --global alias.pob '!git push origin $(git branch --show-current)'
 git config --global alias.rh    'git reset HEAD'
 git config --global alias.rhh   'git reset HEAD --hard'
 git config --global alias.rp    'git reset --patch'
-git config --global alias.clean 'git reset --hard && git clean -df'
+git config --global alias.cln   'git clean -dfx'
+git config --global alias.clnh  'git reset --hard && git clean -dfx'
 
 git config --global alias.chmod 'update-index --chmod=+x --add'
 
