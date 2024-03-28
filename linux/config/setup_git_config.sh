@@ -35,6 +35,8 @@ git config --global alias.lf 'pull --ff-only'
 git config --global alias.up 'pull --rebase'
 git config --global alias.lob '!git pull origin $(git branch --show-current)'
 
+git config --global alias.gbr 'blame --reverse' # START.. file.ext
+
 git config --global alias.p   'push'
 git config --global alias.pot 'push origin --tags'
 git config --global alias.pob '!git push origin $(git branch --show-current)'
