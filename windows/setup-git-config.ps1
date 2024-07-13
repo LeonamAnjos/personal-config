@@ -2,6 +2,7 @@ if (!(Get-Command -Name 'git' -ErrorAction SilentlyContinue)) {
     Write-Error "Git is not installed!" -ErrorAction Stop
 }
 
+# Aliases
 git config --global alias.st 'status'
 git config --global alias.s  'status -sb'
 
@@ -27,6 +28,8 @@ git config --global alias.lf 'pull --ff-only'
 git config --global alias.up 'pull --rebase'
 git config --global alias.lob '!git pull origin $(git branch --show-current)'
 
+git config --global alias.gr 'grep -in'
+
 git config --global alias.gbr 'blame --reverse' # START.. file.ext
 
 git config --global alias.p   'push'
@@ -44,7 +47,7 @@ git config --global alias.chmod 'update-index --chmod=+x --add'
 
 git config --global alias.t   '!git tag -a $1 -m $1 #'
 git config --global alias.tls  'tag --sort=-version:refname'
-# git config --global alias.tlc '!git show-ref --tags -d | grep {} | tail -10 | sort -r'
+git config --global alias.tlc '!git show-ref --tags -d | grep {} | tail -10 | sort -r'
 git config --global alias.td  'tag -d'
 git config --global alias.tdr '!git td $1; git push --delete origin $1 --no-verify #'
 
@@ -74,6 +77,7 @@ git config --global alias.update 'fetch --all --tag --prune'
 
 git config --global alias.cleanup '!git update && git gc'
 
+# Others
 git config --global branch.master.mergeOptions '--no-ff --no-commit'
 
 git config --global core.autocrlf   false
@@ -81,3 +85,6 @@ git config --global core.safecrlf   true
 git config --global core.ignoreCase false
 
 git config --global grep.linenumber true
+
+# Finish
+Write-Output "'.gitconfig' updated successfully!"
