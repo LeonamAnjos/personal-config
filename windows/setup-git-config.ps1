@@ -80,7 +80,7 @@ git config --global alias.cleanup '!git update && git gc'
 # Others
 git config --global branch.master.mergeOptions '--no-ff --no-commit'
 
-git config --global core.autocrlf   false
+# git config --global core.autocrlf   false
 git config --global core.safecrlf   true
 git config --global core.ignoreCase false
 
