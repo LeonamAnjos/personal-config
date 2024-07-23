@@ -40,6 +40,7 @@ git config --global alias.rh    'reset HEAD'
 git config --global alias.rhh   'reset HEAD --hard'
 git config --global alias.rp    'reset --patch'
 
+git config --global alias.cdf   'clean -df'
 git config --global alias.cln   'clean -dfx'
 git config --global alias.clnh  '!git reset --hard && git clean -dfx'
 
