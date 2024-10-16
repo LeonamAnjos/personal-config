@@ -29,6 +29,7 @@ git config --global alias.up 'pull --rebase'
 git config --global alias.lob '!git pull origin $(git branch --show-current)'
 
 git config --global alias.gr 'grep -in'
+git config --global alias.gret '!f() { git grep -in "$1" -- ":!*.Test*.cs"; }; f' # ! == :(exclude)
 
 git config --global alias.gbr 'blame --reverse' # START.. file.ext
 
