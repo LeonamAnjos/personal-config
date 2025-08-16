@@ -1,0 +1,260 @@
+{
+	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
+	"CreationDate" : "2025-08-16T22:25:37.903-00:00",
+	"Sources" : 
+	[
+		{
+			"Packages" : 
+			[
+				{
+					"PackageIdentifier" : "CoreyButler.NVMforWindows",
+					"Version" : "1.1.11"
+				},
+				{
+					"PackageIdentifier" : "Dell.PeripheralManager",
+					"Version" : "1.7.2"
+				},
+				{
+					"PackageIdentifier" : "Ditto.Ditto",
+					"Version" : "3.24.246.0"
+				},
+				{
+					"PackageIdentifier" : "Git.Git",
+					"Version" : "2.50.0"
+				},
+				{
+					"PackageIdentifier" : "Notepad++.Notepad++",
+					"Version" : "8.8.3"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.Office",
+					"Version" : "16.0.18925.20216"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.OneDrive",
+					"Version" : "25.130.0706.0004"
+				},
+				{
+					"PackageIdentifier" : "Google.Chrome",
+					"Version" : "138.0.7204.97"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.msodbcsql.17",
+					"Version" : "17.10.6.1"
+				},
+				{
+					"PackageIdentifier" : "7zip.7zip",
+					"Version" : "25.01.00.0"
+				},
+				{
+					"PackageIdentifier" : "NickeManarin.ScreenToGif",
+					"Version" : "2.41.5"
+				},
+				{
+					"PackageIdentifier" : "Motorola.MobileDrivers",
+					"Version" : "6.4.0"
+				},
+				{
+					"PackageIdentifier" : "GitHub.GitLFS",
+					"Version" : "3.5.1"
+				},
+				{
+					"PackageIdentifier" : "Dell.CommandUpdate.Universal",
+					"Version" : "5.5.0"
+				},
+				{
+					"PackageIdentifier" : "JanDeDobbeleer.OhMyPosh",
+					"Version" : "26.19.1"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.CLRTypesSQLServer.2019",
+					"Version" : "15.0.2000.5"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.AzureDataStudio",
+					"Version" : "1.52.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.WebDeploy",
+					"Version" : "10.0.8305"
+				},
+				{
+					"PackageIdentifier" : "Python.Python.2",
+					"Version" : "2.7.18150"
+				},
+				{
+					"PackageIdentifier" : "Adobe.Acrobat.Reader.64-bit",
+					"Version" : "25.001.20577"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.SQLServer.2012.NativeClient",
+					"Version" : "11.4.7515.2"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VisualStudioCode",
+					"Version" : "1.103.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.OpenJDK.11",
+					"Version" : "11.0.16.101"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.PowerShell",
+					"Version" : "7.5.2.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VCRedist.2013.x64",
+					"Version" : "12.0.30501.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.SDK.8",
+					"Version" : "8.0.413"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.SDK.7",
+					"Version" : "7.0.317"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.SDK.6",
+					"Version" : "6.0.321"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.SQLServerManagementStudio",
+					"Version" : "20.2.1"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.HostingBundle.6",
+					"Version" : "6.0.36"
+				},
+				{
+					"PackageIdentifier" : "Skillbrains.Lightshot",
+					"Version" : "5.5.0.7"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.7",
+					"Version" : "7.0.20"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.Edge",
+					"Version" : "139.0.3405.86"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.AspNetCore.6",
+					"Version" : "6.0.36"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.SDK.5",
+					"Version" : "5.0.408"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.AspNetCore.3_1",
+					"Version" : "3.1.32"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.8",
+					"Version" : "8.0.19"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.AspNetCore.7",
+					"Version" : "7.0.20"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.Teams.Classic",
+					"Version" : "1.5.0.30767"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.Runtime.3_1",
+					"Version" : "3.1.32"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.Framework.DeveloperPack_4",
+					"Version" : "4.8.1"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.Framework.DeveloperPack.4.6",
+					"Version" : "> 4.6.2"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.Runtime.6",
+					"Version" : "6.0.36"
+				},
+				{
+					"PackageIdentifier" : "Caphyon.AdvancedInstaller",
+					"Version" : "21.6"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.HostingBundle.3_1",
+					"Version" : "3.1.32"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x64",
+					"Version" : "14.42.34438.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x86",
+					"Version" : "14.42.34438.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.SDK.9",
+					"Version" : "9.0.109"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.RemoteHelp",
+					"Version" : "4.0.1.13"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VCRedist.2013.x86",
+					"Version" : "12.0.30501.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.SDK.3_1",
+					"Version" : "3.1.426"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.NuGet",
+					"Version" : "6.8.0.131"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.PowerToys",
+					"Version" : "0.81.0"
+				},
+				{
+					"PackageIdentifier" : "Canonical.Ubuntu.2204",
+					"Version" : "2204.5.10021.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.Teams",
+					"Version" : "25212.2204.3869.2204"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.AppInstaller",
+					"Version" : "1.26.430.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.UI.Xaml.2.7",
+					"Version" : "7.2409.9001.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.UI.Xaml.2.8",
+					"Version" : "8.2501.31001.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VCLibs.Desktop.14",
+					"Version" : "14.0.33728.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.WindowsTerminal",
+					"Version" : "1.22.12111.0"
+				}
+			],
+			"SourceDetails" : 
+			{
+				"Argument" : "https://cdn.winget.microsoft.com/cache",
+				"Identifier" : "Microsoft.Winget.Source_8wekyb3d8bbwe",
+				"Name" : "winget",
+				"Type" : "Microsoft.PreIndexed.Package"
+			}
+		}
+	],
+	"WinGetVersion" : "1.11.430"
+}
