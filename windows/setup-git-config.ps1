@@ -53,8 +53,8 @@ git config --global alias.tlc '!git show-ref --tags -d | grep {} | tail -10 | so
 git config --global alias.td  'tag -d'
 git config --global alias.tdr '!git td $1; git push --delete origin $1 --no-verify #'
 
-git config --global alias.tr  '!T="release/$(date +"%Y-%m-%d")$2/prd01/$1"; git t $T #'
-git config --global alias.trh '!T="release/$(date +"%Y-%m-%d")$2/prd01/$1/HOTFIX"; git t $T #'
+# git config --global alias.tr  '!T="release/$(date +"%Y-%m-%d")$2/prd01/$1"; git t $T #'
+# git config --global alias.trh '!T="release/$(date +"%Y-%m-%d")$2/prd01/$1/HOTFIX"; git t $T #'
 
 git config --global alias.trp  '!git tr $1 $2; git pot #'
 git config --global alias.trhp '!git trh $1 $2; git pot #'
