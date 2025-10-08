@@ -87,6 +87,7 @@ git config --global core.safecrlf   true
 git config --global core.ignoreCase false
 
 git config --global grep.linenumber true
+git config --global core.longpaths true
 
 # Finish
 Write-Output "'.gitconfig' updated successfully!"
