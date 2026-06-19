@@ -6,7 +6,7 @@ if (!(Get-Command -Name 'git' -ErrorAction SilentlyContinue)) {
 git config --global alias.st 'status'
 git config --global alias.s  'status -sb'
 
-git config --global alias.co 'checkout'
+git config --global alias.co   'checkout'
 git config --global alias.com  'checkout master'
 git config --global alias.conb 'checkout -b'
 
@@ -14,8 +14,8 @@ git config --global alias.ci   'commit -m'
 git config --global alias.cia  'commit --amend'
 git config --global alias.cian 'commit --amend --no-edit'
 
-git config --global alias.b    'branch'
-git config --global alias.bd   'branch -D'
+git config --global alias.b  'branch'
+git config --global alias.bd 'branch -D'
 
 git config --global alias.d  'diff'
 git config --global alias.dc 'diff --cached'
@@ -27,6 +27,12 @@ git config --global alias.l  'pull'
 git config --global alias.lf 'pull --ff-only'
 git config --global alias.up 'pull --rebase'
 git config --global alias.lob '!git pull origin $(git branch --show-current)'
+
+git config --global alias.m   'merge'
+git config --global alias.mf  'merge --ff-only'
+git config --global alias.mob '!git merge --ff-only origin/$(git branch --show-current)'
+
+git config --global alias.fob '!git fetch --prune origin $(git branch --show-current)'
 
 git config --global alias.gr 'grep -in'
 git config --global alias.gret '!f() { git grep -in "$1" -- ":!*.Test*.cs"; }; f' # ! == :(exclude)
