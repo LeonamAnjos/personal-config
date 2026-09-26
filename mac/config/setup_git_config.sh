@@ -11,5 +11,5 @@ common_config="$(cd "$script_dir/../.." && pwd)/shared/gitconfig.common"
 
 git config --global include.path "$common_config"
 
-# Linux-specific
+# macOS-specific
 git config --global core.autocrlf false

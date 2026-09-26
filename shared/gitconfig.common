@@ -1,0 +1,98 @@
+# Shared git aliases/settings, included via `git config --global include.path`
+# from linux/config/setup_git_config.sh, mac/config/setup_git_config.sh and
+# windows/setup-git-config.ps1.
+#
+# Keep this file OS-agnostic. OS-specific settings (core.autocrlf,
+# core.longpaths, ...) belong in each platform's own script, not here.
+
+[alias]
+	st = status
+	s = status -sb
+
+	co = checkout
+	com = checkout master
+	conb = checkout -b
+
+	ci = commit -m
+	cia = commit --amend
+	cian = commit --amend --no-edit
+
+	b = branch
+	bd = branch -D
+
+	d = diff
+	dc = diff --cached
+
+	a = add
+	ap = add --patch
+
+	l = pull
+	lf = pull --ff-only
+	up = pull --rebase
+	lob = !git pull origin $(git branch --show-current)
+
+	m = merge
+	mf = merge --ff-only
+	mob = !git merge --ff-only origin/$(git branch --show-current)
+
+	fob = !git fetch --prune origin $(git branch --show-current)
+
+	gr = grep -in
+	gret = "!f() { git grep -in \"$1\" -- \":!*.Test*.cs\"; }; f"
+
+	gbr = blame --reverse
+
+	p = push
+	pot = push origin --tags
+	pob = !git push origin $(git branch --show-current)
+
+	rh = reset HEAD
+	rhh = reset HEAD --hard
+	rp = reset --patch
+
+	cdf = clean -df
+	cln = clean -dfx
+	clnh = !git reset --hard && git clean -dfx
+
+	chmod = update-index --chmod=+x --add
+
+	t = "!git tag -a $1 -m $1 #"
+	tl = "tag --sort=-version:refname | head -n $1 #"
+	tls = tag --sort=-version:refname
+	tlc = !git show-ref --tags -d | grep {} | tail -10 | sort -r
+	td = tag -d
+	tdr = "!git td $1; git push --delete origin $1 --no-verify #"
+
+	tr = "!T=\"release/$(date +\"%Y-%m-%d\")$2/prd01/$1\"; git t $T #"
+	trh = "!T=\"release/$(date +\"%Y-%m-%d\")$2/prd01/$1/HOTFIX\"; git t $T #"
+	trp = "!git tr $1 $2; git pot #"
+	trhp = "!git trh $1 $2; git pot #"
+
+	slc = shortlog --numbered --summary --email --no-merges
+	lg = "log --pretty=format:\"%C(auto)%h%d %C(green)(%cs) %C(cyan)%an %C(auto)%s\""
+	lgg = log --graph --decorate --all
+
+	alias = config --get-regexp alias
+	user = config --get-regexp user
+	rx = config --get-regexp
+
+	rbi = rebase --interactive
+	rbc = rebase --continue
+	rba = rebase --abort
+
+	cp = cherry-pick
+
+	wc = whatchanged --patch --abbrev-commit
+
+	update = fetch --all --tag --prune
+	cleanup = !git update && git gc
+
+[branch "master"]
+	mergeOptions = --no-ff --no-commit
+
+[core]
+	safecrlf = true
+	ignoreCase = false
+
+[grep]
+	linenumber = true
