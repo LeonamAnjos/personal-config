@@ -1,9 +1,41 @@
 # https://brew.sh/
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-brew install --cask google-chrome
+# Casks
+brew install --cask adobe-acrobat-reader
+brew install --cask alfred
+brew install --cask brave-browser
+brew install --cask cheatsheet
+brew install --cask claude-code
+brew install --cask discord
+brew install --cask dotnet-sdk
+# brew install --cask flameshot
+brew install --cask flutter
 brew install --cask iterm2
+brew install --cask maccy
+brew install --cask microsoft-teams
+brew install --cask monitorcontrol
+# brew install --cask rectangle
+brew install --cask steam
+brew install --cask stremio
+brew install --cask surfshark
+brew install --cask transmission
 brew install --cask visual-studio-code
+brew install --cask vlc
+brew install --cask whatsapp
+# brew install --cask zoom
+
+# Formulae
+brew install colima
+brew install docker
+brew install docker-completion
+brew install docker-compose
+brew install dotnet
+brew install gh
+brew install go
+brew install go-md2man
+brew install golang-migrate
+brew install python@3.14
 
 # https://ohmyz.sh/#install
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
