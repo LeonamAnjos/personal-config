@@ -90,6 +90,9 @@
 [branch "master"]
 	mergeOptions = --no-ff --no-commit
 
+[branch "main"]
+	mergeOptions = --no-ff --no-commit
+
 [core]
 	safecrlf = true
 	ignoreCase = false
