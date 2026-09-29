@@ -7,7 +7,7 @@
 
 [alias]
 	st = status
-	s = status -sb
+	s = status --short --branch --ahead-behind
 
 	co = checkout
 	com = checkout master
